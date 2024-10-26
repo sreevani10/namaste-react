@@ -10,11 +10,32 @@ const heading = React.createElement("h1", {}, "Reactttt");
 //JSX => Babel transapiler convert it to => React.createElement => ReactElement.JS Object => HtmlElement (render)
 
 //to write jsx in multiple lines we can wrap elements into ()
-const jsxHeading = (
+
+//React Element
+const jsxHading = (
 <h1 className="heading">
     Namaste reactbb
 </h1>
 );
+
+
+///Component Composition -- to put one component into another
+const Title =()=> (
+    <h1 className="heading">
+        Namaste reactbb
+    </h1>
+    );
+
+//React Component
+// Class based com and functional based com
+//React Functional Component
+const HeadingComponent = ()=>(
+     <div id="container">
+        <Title/> 
+
+     <h1>React Functional Component</h1>
+     </div>
+)
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(jsxHeading);
+root.render(<HeadingComponent/>);
