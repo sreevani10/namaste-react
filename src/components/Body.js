@@ -1,6 +1,7 @@
 import RestaurantCard from "./RestaurantCard";
 import restList from "../utils/mockData";
 import { useEffect, useState } from "react";
+import Shimmer from "./Shimmer";
 
 const Body = () => {
   let [listOfRestaurants, setListOfRestaurants] = useState([]);
@@ -16,11 +17,12 @@ const Body = () => {
 
     const json = await data.json();
     setListOfRestaurants(
-      json.data.cards[1].card.card.gridElements.infoWithStyle.restaurants
+      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
   };
-
-  return (
+  
+ 
+  return listOfRestaurants.length===0 ? (<Shimmer/>) :(
     <div className="body">
       <div className="filter">
         <button
