@@ -1,0 +1,23 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "This is Namaste React by Sreevani",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sreevani10/namaste-react.git"
+  },
+  "keywords": [],
+  "author": "\"Sreevani\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sreevani10/namaste-react/issues"
+  },
+  "homepage": "https://github.com/sreevani10/namaste-react#readme",
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  }
+}
