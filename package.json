@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "This is Namaste React by Sreevani",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
@@ -19,5 +21,8 @@
   "dependencies": {
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.0"
   }
 }
