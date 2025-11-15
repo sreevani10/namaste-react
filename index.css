@@ -28,9 +28,10 @@
   margin: 5px;
   padding: 10px;
   width: 200px;
-  height: 400px;
+  height: 500px;
   border: 1px solid black;
   margin: 10px;
+  cursor: pointer;
 }
 
 .search-bar {
@@ -43,4 +44,9 @@
 .res-logo {
   width: 100%;
   height: 50%;
+}
+
+.filter-btn {
+  margin: 10px;
+  cursor: pointer;
 }
