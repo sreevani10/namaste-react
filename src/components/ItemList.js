@@ -16,6 +16,7 @@ const ItemList = ({ items, dummy }) => {
       <h1>
         {items.map((item) => (
           <div
+            data-testid="foodItems"
             key={item.card.info.id}
             className="p-2 m-2 border-black-200 border-b-2 text-left flex justify-between"
           >
